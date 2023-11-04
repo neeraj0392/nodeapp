@@ -9,4 +9,13 @@ app.get("/", (req, res) => {
     })
 });
 
-app.listen(3000, () => {});
+app.get("/Student", (req, res) => {
+    res.status(200).json({
+        data: {
+            name: "Student"
+        }
+    })
+});
+
+
+app.listen(5000, () => {});
